@@ -2,13 +2,20 @@ const express = require('express')
 const router = express.Router()
 const fs =require("fs");
 const path = require("path");
+const requstData = require("./get_post.js")
 
 
 router.get('/', function (req, res) {
-    res.sendFile(path.resolve(__dirname+"/../view/index.html"));
+     // requstData._get(function (data){
+     //   res.send(data)
+     // })
+    requstData._post(function (data){
+      res.send(data)
+    })
+    // res.sendFile(path.resolve(__dirname+"/../view/index.html"));
 })
 router.get('/ff', function (req, res) {
-    res.send("s=ff---------");
+    res.send("ff========f");
 })
 
 
