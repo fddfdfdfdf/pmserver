@@ -19,7 +19,7 @@ app.use(express.static("./public"))
 //node 路由
 app.use('/', indexRouter);
 
-
+//node 的端口
  app.listen(3000, function () {
      console.log("应用实例运行于3000端口")
  })
