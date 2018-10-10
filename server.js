@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, './views'));
 //设置静态变量
 app.use(express.static("./public"))
 
-
+//node 路由
 app.use('/', indexRouter);
 
 
