@@ -19,7 +19,7 @@ app.use(express.static("./public"))
 //node 路由
 app.use('/', indexRouter);
 
-//错误路由处理
+// 错误路由处理
 app.get('*', function (req, res) {
      res.sendFile(path.resolve(__dirname+"/./views/404.html"));
 });
