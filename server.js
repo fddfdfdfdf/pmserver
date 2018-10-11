@@ -21,7 +21,7 @@ app.use('/', indexRouter);
 
 //错误路由处理
 app.get('*', function (req, res) {
-     res.sendFile(path.resolve(__dirname+"/../view/404.html"));
+     res.sendFile(path.resolve(__dirname+"/../views/404.html"));
 });
 //node 的端口
  app.listen(3000, function () {
