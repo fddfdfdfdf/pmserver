@@ -18,7 +18,9 @@ app.use(express.static("./public"))
 
 //node 路由
 app.use('/', indexRouter);
-
+app.get('*', function (req, res) {
+     res.sendFile(path.resolve(__dirname+"/../view/404.html"));
+});
 //node 的端口
  app.listen(3000, function () {
      console.log("应用实例运行于3000端口")
